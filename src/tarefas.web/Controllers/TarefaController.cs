@@ -20,8 +20,20 @@ namespace tarefas.web.Controllers
             tarefa2.Titulo = "Pao";
             tarefa2.Id = 2;
 
+            var tarefa3 = new TarefaViewModel();
+            tarefa3.Descricao = "Fazer Urgente";
+            tarefa3.Titulo = "O que precisa";
+            tarefa3.Id = 3;
+
+            var tarefa4 = new TarefaViewModel();
+            tarefa4.Descricao = "Proprietario";
+            tarefa4.Titulo = "Quem deve";
+            tarefa4.Id = 4;  
+
             listadetarefas.Add(tarefa1);
             listadetarefas.Add(tarefa2);
+            listadetarefas.Add(tarefa3);
+            listadetarefas.Add(tarefa4);
         }
         public IActionResult Criar()
          {

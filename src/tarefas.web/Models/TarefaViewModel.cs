@@ -11,6 +11,9 @@ namespace Tarefas.Web.Models
         public string Descricao { get; set; }
         [DisplayName("Título")]
         public string Titulo { get; set; }
+       
+        // Nova propriedade Status
+         public string Status { get; set; }
     }
     
 }
