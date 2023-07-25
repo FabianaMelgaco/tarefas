@@ -1,0 +1,30 @@
+@model List<Tarefas.Web.Models.TarefaViewModel> 
+
+
+<form asp-action="Listar">
+    <table>
+        <tr>
+            <td>Codigo</td>
+            <td>Titulo</td>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+             <tr>
+                  <td>@item.Id</td>
+                  <td>@item.Titulo</td>
+                  <td>
+
+                    <a
+                    class="nav-link text-dark"
+                    asp-area=""
+                    asp-controller="Tarefa"
+                    asp-action="Detalhe"
+                    asp-route-id="@item.Id">Detalhar
+                    </a>
+                    
+                  </td>
+             </tr>
+        }
+    </table>
+</form>

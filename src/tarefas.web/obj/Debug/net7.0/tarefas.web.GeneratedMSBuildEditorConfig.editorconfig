@@ -9,37 +9,49 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = tarefas.web
 build_property.RootNamespace = tarefas.web
-build_property.ProjectDir = C:\Arquivos Fabiana\Github\tarefas\src\tarefas.web\
+build_property.ProjectDir = c:\Arquivos Fabiana\Github\tarefas\src\tarefas.web\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Arquivos Fabiana\Github\tarefas\src\tarefas.web
+build_property.MSBuildProjectDirectory = c:\Arquivos Fabiana\Github\tarefas\src\tarefas.web
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Arquivos Fabiana/Github/tarefas/src/tarefas.web/Views/Home/Index.cshtml]
+[c:/Arquivos Fabiana/Github/tarefas/src/tarefas.web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Arquivos Fabiana/Github/tarefas/src/tarefas.web/Views/Home/Privacy.cshtml]
+[c:/Arquivos Fabiana/Github/tarefas/src/tarefas.web/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Arquivos Fabiana/Github/tarefas/src/tarefas.web/Views/Shared/Error.cshtml]
+[c:/Arquivos Fabiana/Github/tarefas/src/tarefas.web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Arquivos Fabiana/Github/tarefas/src/tarefas.web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Arquivos Fabiana/Github/tarefas/src/tarefas.web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Arquivos Fabiana/Github/tarefas/src/tarefas.web/Views/_ViewImports.cshtml]
+[c:/Arquivos Fabiana/Github/tarefas/src/tarefas.web/Views/Tarefa/Criar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyZWZhXENyaWFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Arquivos Fabiana/Github/tarefas/src/tarefas.web/Views/Tarefa/Detalhe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyZWZhXERldGFsaGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Arquivos Fabiana/Github/tarefas/src/tarefas.web/Views/Tarefa/Listar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFyZWZhXExpc3Rhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Arquivos Fabiana/Github/tarefas/src/tarefas.web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Arquivos Fabiana/Github/tarefas/src/tarefas.web/Views/_ViewStart.cshtml]
+[c:/Arquivos Fabiana/Github/tarefas/src/tarefas.web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Arquivos Fabiana/Github/tarefas/src/tarefas.web/Views/Shared/_Layout.cshtml]
+[c:/Arquivos Fabiana/Github/tarefas/src/tarefas.web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-nmd6hrhzo8
