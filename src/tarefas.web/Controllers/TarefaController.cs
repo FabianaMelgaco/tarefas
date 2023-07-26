@@ -6,7 +6,10 @@ namespace tarefas.web.Controllers
 {
     public class TarefaController : Controller 
     {
+ 
         public List<TarefaViewModel> listadetarefas = new List<TarefaViewModel>();
+        //public <TarefaViewModel> = listadetarefas();
+
 
         public TarefaController()
         {
@@ -22,8 +25,9 @@ namespace tarefas.web.Controllers
             tarefa2.Status = "Ativo";
             tarefa2.Id = 2;
 
+            /*
             var tarefa3 = new TarefaViewModel();
-            tarefa3.Descricao = "Fazer Urgente";
+            tarefa3.Descricao = "Urgente" ;
             tarefa3.Titulo = "Necessidade";
             tarefa3.Status = "Ativo";
             tarefa3.Id = 3;
@@ -33,23 +37,39 @@ namespace tarefas.web.Controllers
             tarefa4.Titulo = "Responsavel";
             tarefa4.Status = "Ativo";
             tarefa4.Id = 4;  
-
+            */
             listadetarefas.Add(tarefa1);
             listadetarefas.Add(tarefa2);
-            listadetarefas.Add(tarefa3);
-            listadetarefas.Add(tarefa4);
+            //listadetarefas.Add(tarefa3);
+            //listadetarefas.Add(tarefa4);
+            
       
         }
         public IActionResult Criar()
          {
             return View();
          }
-         
+         [HttpGet]
+         public IActionResult Index(int Id, string Titulo, string Descricao, string Status)
+          {
+        // dados inseridos pelo usuário.
+        //ViewBag para armazenar os dados inseridos.
+        ViewBag.Id = Id;
+        ViewBag.Titulo = Titulo;
+        ViewBag.Descricao = Descricao;
+        ViewBag.Status = Status;
+        
+        return View();
+          }
+
         [HttpPost]
         public IActionResult Criar(TarefaViewModel fabiana)
-        {            
-            return View();
-        }
+         {            
+            //return View();
+            listadetarefas.Add(fabiana);
+            //return View("Listar",listaDeTarefas); //aqui deu certo
+            return View(listadetarefas);
+          }
         public IActionResult Listar ()
         {            
             return View (listadetarefas);
@@ -59,5 +79,6 @@ namespace tarefas.web.Controllers
             var tarefa = listadetarefas.FirstOrDefault(f => f.Id == id);
             return View(tarefa);
         }
-    }
+   }
 }
+
