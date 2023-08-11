@@ -1,4 +1,5 @@
 @model List<Tarefas.Web.Models.TarefaViewModel> 
+    
 
 
 <form asp-action="Listar">
@@ -13,22 +14,22 @@
 
         @foreach (var item in Model)
         {
-             <tr>
-                  <td>@item.Id</td>
-                  <td>@item.Titulo</td>
-                  <td>@item.Status</td>
-                  <td>
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Titulo</td>
+                <td>@item.Status</td>
+                <td>
 
-                    <a
+                <a
                     class="nav-link text-dark"
                     asp-area=""
                     asp-controller="Tarefa"
                     asp-action="Detalhe"
                     asp-route-id="@item.Id">Detalhar
-                    </a>
+                </a>
                     
-                  </td>
-             </tr>
+                </td>
+            </tr>
         }
     </table>
 </form>
