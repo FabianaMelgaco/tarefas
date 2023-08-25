@@ -6,8 +6,8 @@
     <table>
         <tr>
             <td>Id</td>
-            <td>Codigo</td>
             <td>Titulo</td>
+            <td>Descrição</td>
             <td>Status</td>
 
         </tr>
@@ -17,6 +17,7 @@
             <tr>
                 <td>@item.Id</td>
                 <td>@item.Titulo</td>
+                <td>@item.Descricao</td>
                 <td>@item.Status</td>
                 <td>
 
@@ -26,6 +27,28 @@
                     asp-controller="Tarefa"
                     asp-action="Detalhe"
                     asp-route-id="@item.Id">Detalhar
+                </a>
+                    
+                </td>
+                <td>
+
+                <a
+                    class="nav-link text-dark"
+                    asp-area=""
+                    asp-controller="Tarefa"
+                    asp-action="Editar"
+                    asp-route-id="@item.Id">Editar
+                </a>
+                    
+                </td>
+                <td>
+
+                <a
+                    class="nav-link text-dark"
+                    asp-area=""
+                    asp-controller="Tarefa"
+                    asp-action="Excluir"
+                    asp-route-id="@item.Id">Excluir
                 </a>
                     
                 </td>

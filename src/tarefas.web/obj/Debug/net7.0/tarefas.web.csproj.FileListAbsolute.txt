@@ -29,3 +29,14 @@ C:\Arquivos Fabiana\Github\tarefas\src\tarefas.web\obj\Debug\net7.0\refint\taref
 C:\Arquivos Fabiana\Github\tarefas\src\tarefas.web\obj\Debug\net7.0\tarefas.web.pdb
 C:\Arquivos Fabiana\Github\tarefas\src\tarefas.web\obj\Debug\net7.0\tarefas.web.genruntimeconfig.cache
 C:\Arquivos Fabiana\Github\tarefas\src\tarefas.web\obj\Debug\net7.0\ref\tarefas.web.dll
+C:\Arquivos Fabiana\Github\tarefas\src\tarefas.web\bin\Debug\net7.0\Dapper.dll
+C:\Arquivos Fabiana\Github\tarefas\src\tarefas.web\bin\Debug\net7.0\System.Data.SQLite.dll
+C:\Arquivos Fabiana\Github\tarefas\src\tarefas.web\bin\Debug\net7.0\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Arquivos Fabiana\Github\tarefas\src\tarefas.web\bin\Debug\net7.0\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Arquivos Fabiana\Github\tarefas\src\tarefas.web\bin\Debug\net7.0\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Arquivos Fabiana\Github\tarefas\src\tarefas.web\bin\Debug\net7.0\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Arquivos Fabiana\Github\tarefas\src\tarefas.web\bin\Debug\net7.0\Tarefas.DAO.dll
+C:\Arquivos Fabiana\Github\tarefas\src\tarefas.web\bin\Debug\net7.0\Tarefas.DTO.dll
+C:\Arquivos Fabiana\Github\tarefas\src\tarefas.web\bin\Debug\net7.0\Tarefas.DTO.pdb
+C:\Arquivos Fabiana\Github\tarefas\src\tarefas.web\bin\Debug\net7.0\Tarefas.DAO.pdb
+C:\Arquivos Fabiana\Github\tarefas\src\tarefas.web\obj\Debug\net7.0\tarefas.web.csproj.CopyComplete

@@ -1,0 +1,12 @@
+@model Tarefas.Web.Models.TarefaViewModel
+
+
+<form asp-action="Editar">
+    <label for="Titulo">Titulo:</label>
+    <input asp-for="Titulo" type="text"></input>
+    <label for="Descricao">Descricao:</label>
+    <input asp-for="Descricao" type="text"></input>
+    <label for="Status">Status:</label>
+    <input asp-for="Status" type="text"></input>
+    <input type="submit" value="Salvar"/>
+</form>

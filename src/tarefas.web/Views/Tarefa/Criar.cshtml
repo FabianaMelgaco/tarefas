@@ -2,15 +2,13 @@
 
 
 <form asp-action="Criar">
-    <label for="Id">Id:</label>
-    <input asp-for="Id" type="int"></input>
-    <label for="Titulo">Titulo:</label>
+    <label for="Titulo">@Html.DisplayNameFor(model=> model.Titulo)</label>
     <input asp-for="Titulo" type="text"></input>
-    <label for="Descricao">Descricao:</label>
+    <label asp-for="Descricao">@Html.DisplayNameFor(model => model.Descricao)</label>
     <input asp-for="Descricao" type="text"></input>
-    <label for="Status">Status:</label>
+    <label for="Status">@Html.DisplayNameFor(model=> model.Status)</label>
     <input asp-for="Status" type="text"></input>
-    <input type="submit" />
+    <input type="submit" value="Criar"/>
 </form>
 
 

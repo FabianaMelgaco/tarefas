@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "QSOBJtnU8EMaYPQDAJ0ZOLXJGtP3X7nWordBp28G6CW17TqHb0kYor7IkpZAWwyHBp1FNSZkGYpXwYh4T2q8zQ==",
+  "dgSpecHash": "54Wf5TLPl62TbgthBpD3xq10+mBJL97OGhBwkMhwJJqbrrQp0n2dr9OzJhQ1ExsamWrvKfF5yGMOkIe3amymcw==",
   "success": true,
   "projectFilePath": "C:\\Arquivos Fabiana\\Github\\tarefas\\src\\tarefas.web\\tarefas.web.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\fabiana.silva\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
+    "C:\\Users\\fabiana.silva\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.113.2\\stub.system.data.sqlite.core.netstandard.1.0.113.2.nupkg.sha512",
+    "C:\\Users\\fabiana.silva\\.nuget\\packages\\system.data.sqlite.core\\1.0.113.7\\system.data.sqlite.core.1.0.113.7.nupkg.sha512"
+  ],
   "logs": []
 }

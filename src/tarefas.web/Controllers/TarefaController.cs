@@ -1,12 +1,15 @@
 using System;
 using Microsoft.AspNetCore.Mvc;
 using Tarefas.Web.Models;
+using Tarefas.DTO;
+using Tarefas.DAO;
 
 namespace tarefas.web.Controllers
 {
     public class TarefaController : Controller 
     {
         private static List<TarefaViewModel> listadetarefas = new List<TarefaViewModel>();
+        private TarefaDTO tarefaDTO;
 
         public TarefaController()
         {
@@ -31,26 +34,108 @@ namespace tarefas.web.Controllers
         {
           return View();
         }
-        public IActionResult Index()
-        {
-          return View();
-        }
 
         [HttpPost]
-        public IActionResult Criar(TarefaViewModel fabiana)
+        public IActionResult Criar(TarefaViewModel tarefa)
         {            
-          listadetarefas.Add(fabiana);
-          return RedirectToAction("Listar","Tarefa");
+          //listadetarefas.Add(fabiana);
+          //return RedirectToAction("Listar","Tarefa");
+            var tarefaDTO = new TarefaDTO()
+            {
+              Titulo = tarefa.Titulo,
+              Descricao = tarefa.Descricao,
+              Status = tarefa.Status
+              
+            };
+            var TarefaDAO = new TarefaDAO{};
+            TarefaDAO.Criar (tarefaDTO);
+            
+            return View();
         }
+
+            //}
+            //public IActionResult Listar()
         public IActionResult Listar()
         {            
-          return View (listadetarefas);
+          var tarefaDAO = new TarefaDAO();
+          var listaDeTarefasDTO = tarefaDAO.Consultar();
+          var listaDeTarefa = new List<TarefaViewModel>();
+
+          foreach (var tarefaDTO in listaDeTarefasDTO)
+            {
+                listaDeTarefa.Add(new TarefaViewModel()
+                {
+                  Id = tarefaDTO.Id,
+                  Titulo = tarefaDTO.Titulo,
+                  Descricao = tarefaDTO.Descricao,
+                  Status = tarefaDTO.Status
+                }
+                );
+            }
+
+          return View(listaDeTarefa);
+
         }
         public IActionResult Detalhe (int id)
         {
-          var tarefa = listadetarefas.FirstOrDefault(f => f.Id == id);
-          return View(tarefa);
-        }
-   }
-}
+          var TarefaDAO  = new TarefaDAO();
+          var TarefaDTO = TarefaDAO.Consultar(id);
 
+          var TarefaViewModel = new TarefaViewModel
+            {
+              Id = TarefaDTO.Id,
+              Titulo = TarefaDTO.Titulo,
+              Descricao = TarefaDTO.Descricao,
+              Status = TarefaDTO.Status
+              
+            };
+                
+          return View(TarefaViewModel);
+          }
+
+        public IActionResult Editar (int id)
+        {            
+          var TarefaDAO  = new TarefaDAO();
+          var TarefaDTO = TarefaDAO.Consultar(id);
+
+          var TarefaViewModel = new TarefaViewModel
+            {
+              Id = TarefaDTO.Id,
+              Titulo = TarefaDTO.Titulo,
+              Descricao = TarefaDTO.Descricao,
+              Status = TarefaDTO.Status
+              
+            };
+                
+          return View(TarefaViewModel);
+        }
+
+        [HttpPost]
+        public IActionResult Editar (TarefaViewModel tarefa)
+        {            
+            var tarefaDTO = new TarefaDTO()
+            {
+              Titulo = tarefa.Titulo,
+              Descricao = tarefa.Descricao,
+              Status = tarefa.Status,
+              Id = tarefa.Id
+              
+              
+            };
+            var TarefaDAO = new TarefaDAO{};
+            TarefaDAO.Editar (tarefaDTO);
+            
+             return View();
+        }
+
+        public IActionResult Excluir (int id)
+        {
+          var tarefaDAO = new TarefaDAO{};  
+          tarefaDAO.Excluir(id);
+
+          return RedirectToAction("Listar");
+        }
+          
+    }
+
+}

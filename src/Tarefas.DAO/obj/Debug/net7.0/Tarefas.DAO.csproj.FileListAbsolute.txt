@@ -1,0 +1,15 @@
+C:\Arquivos Fabiana\Github\tarefas\src\Tarefas.DAO\bin\Debug\net7.0\Tarefas.DAO.deps.json
+C:\Arquivos Fabiana\Github\tarefas\src\Tarefas.DAO\bin\Debug\net7.0\Tarefas.DAO.dll
+C:\Arquivos Fabiana\Github\tarefas\src\Tarefas.DAO\bin\Debug\net7.0\Tarefas.DAO.pdb
+C:\Arquivos Fabiana\Github\tarefas\src\Tarefas.DAO\bin\Debug\net7.0\Tarefas.DTO.dll
+C:\Arquivos Fabiana\Github\tarefas\src\Tarefas.DAO\bin\Debug\net7.0\Tarefas.DTO.pdb
+C:\Arquivos Fabiana\Github\tarefas\src\Tarefas.DAO\obj\Debug\net7.0\Tarefas.DAO.csproj.AssemblyReference.cache
+C:\Arquivos Fabiana\Github\tarefas\src\Tarefas.DAO\obj\Debug\net7.0\Tarefas.DAO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Arquivos Fabiana\Github\tarefas\src\Tarefas.DAO\obj\Debug\net7.0\Tarefas.DAO.AssemblyInfoInputs.cache
+C:\Arquivos Fabiana\Github\tarefas\src\Tarefas.DAO\obj\Debug\net7.0\Tarefas.DAO.AssemblyInfo.cs
+C:\Arquivos Fabiana\Github\tarefas\src\Tarefas.DAO\obj\Debug\net7.0\Tarefas.DAO.csproj.CoreCompileInputs.cache
+C:\Arquivos Fabiana\Github\tarefas\src\Tarefas.DAO\obj\Debug\net7.0\Tarefas.DAO.csproj.CopyComplete
+C:\Arquivos Fabiana\Github\tarefas\src\Tarefas.DAO\obj\Debug\net7.0\Tarefas.DAO.dll
+C:\Arquivos Fabiana\Github\tarefas\src\Tarefas.DAO\obj\Debug\net7.0\refint\Tarefas.DAO.dll
+C:\Arquivos Fabiana\Github\tarefas\src\Tarefas.DAO\obj\Debug\net7.0\Tarefas.DAO.pdb
+C:\Arquivos Fabiana\Github\tarefas\src\Tarefas.DAO\obj\Debug\net7.0\ref\Tarefas.DAO.dll
