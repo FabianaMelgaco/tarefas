@@ -1,33 +1,43 @@
 @model Tarefas.Web.Models.TarefaViewModel
 
-Visualizando a tarefa @Model.Id
 
-<Table>
-    <tr>
-        <td>
-            Titulo:
-        </td>
-        <Td> 
-            @Model.Titulo
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Descrição:
-        </td>
-        <td> 
-            @Model.Descricao
-        </td>
+<form asp-action="Detalhe">
 
-    </tr>
-    <tr>
-        <td>
-            Status:
-        </td>
-        <td> 
-            @Model.Status
-        </td>
-        
-    </tr>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
 
-</Table>
+<div class="container">
+  <h2><h3>Visualizando a tarefa @Model.Id</h3></h2>    
+  <p>Detalhes da tarefa:</p>                  
+  <table class="table table-striped">
+    <thead>
+
+    </thead>
+    <tbody>
+        <tr>           
+                <td><strong>Título:</strong></td>
+                <td>@Model.Titulo</td>        
+        </tr>
+      <tr>
+                <td><strong>Descrição:</strong></td>
+                <td>@Model.Descricao</td> 
+      </tr>
+      <tr>
+                <td><strong>Status:</strong></td>
+                <td>@Model.Status</td> 
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+
+
+</form>

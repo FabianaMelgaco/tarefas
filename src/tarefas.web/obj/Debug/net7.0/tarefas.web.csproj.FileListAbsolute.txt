@@ -40,3 +40,4 @@ C:\Arquivos Fabiana\Github\tarefas\src\tarefas.web\bin\Debug\net7.0\Tarefas.DTO.
 C:\Arquivos Fabiana\Github\tarefas\src\tarefas.web\bin\Debug\net7.0\Tarefas.DTO.pdb
 C:\Arquivos Fabiana\Github\tarefas\src\tarefas.web\bin\Debug\net7.0\Tarefas.DAO.pdb
 C:\Arquivos Fabiana\Github\tarefas\src\tarefas.web\obj\Debug\net7.0\tarefas.web.csproj.CopyComplete
+C:\Arquivos Fabiana\Github\tarefas\src\tarefas.web\bin\Debug\net7.0\AutoMapper.dll

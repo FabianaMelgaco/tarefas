@@ -2,11 +2,52 @@
 
 
 <form asp-action="Editar">
-    <label for="Titulo">Titulo:</label>
-    <input asp-for="Titulo" type="text"></input>
-    <label for="Descricao">Descricao:</label>
-    <input asp-for="Descricao" type="text"></input>
-    <label for="Status">Status:</label>
-    <input asp-for="Status" type="text"></input>
-    <input type="submit" value="Salvar"/>
+
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div>
+        <div class="jumbotron text-center">
+            <h3><strong>-- Editando a tarefa @Model.Id --</h3></strong>
+      
+        </div>
+    
+        <div class="container" style="display:flex; flex-direction: row; justify-content: center; align-items: center;">
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3><label for="Titulo">@Html.DisplayNameFor(model=> model.Titulo)</label>
+                    <input asp-for="Titulo" type="text"></input>
+                    </h3>
+                        <h5><span asp-validation-for = "Titulo " type="text"></span></h5>                
+                </div>
+
+                <div class="col-sm-4">
+                    <h3><label asp-for="Descricao">@Html.DisplayNameFor(model => model.Descricao)</label>
+                        <input asp-for="Descricao" type="text"></input>
+                    </h3>
+                        <h5><span asp-validation-for = "Descricao " type="text"></span></h5>                   
+                </div>
+
+                <div class="col-sm-4">
+                    <h3><label for="Status">@Html.DisplayNameFor(model=> model.Status)</label>
+                        <input asp-for="Status" type="text"></input>
+                    </h3>
+                        <h5><span asp-validation-for = "Status " type="text"></span></h5>
+                </div>   
+            </div>
+        </div>
+    </div>   
+
+        <button type="submit" class="btn btn-primary btn-block">Clique aqui para editar a tarefa</button>
+        <div asp-validation-summary="All" class="text-danger"></div>
+</body>
+
 </form>
