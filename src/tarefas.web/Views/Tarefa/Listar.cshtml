@@ -1,66 +1,82 @@
 @model List<Tarefas.Web.Models.TarefaViewModel> 
-    
-<div class="list-group">
-<a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Lista de Tarefas</h5>
-      
-      </a>
-</div>
+
 
 
 <form asp-action="Listar">
-    <table>
-        <tr>
-            
-            <td>Id</td>
-            <td>Titulo</td>
-            <td>Descrição</td>
-            <td>Status</td>
 
-        </tr>
+    <style>
+        .custom-jumbotron {
+            background-color: DodgerBlue;
+            color: white;
+        }
+    </style>
+    <div>
+        <div class="jumbotron text-center custom-jumbotron">
+            <h3><strong>Lista de Tarefas Cadastradas</h3></strong>
+      
+        </div>
+    </div>
+<div class="table-responsive">
+ <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Título</th>
+      <th scope="col">Descrição</th>
+      <th scope="col">Status</th>
+      <th scope="col">Ações</th>
+    </tr>
+  </thead>
+  <tbody>
 
-        @foreach (var item in Model)
+    @foreach (var item in Model)
         {
-            <tr>
-                <td>@item.Id</td>
-                <td>@item.Titulo</td>
-                <td>@item.Descricao</td>
-                <td>@item.Status</td>
+        <tr>
+         
+            <td>@item.Id</td>
+            <td>@item.Titulo</td>
+            <td>@item.Descricao</td>
+            <td>@item.Status</td>
+        
                 <td>
-
-                <a
+                <button type="submit" class="btn btn-primary"
                     class="nav-link text-dark"
                     asp-area=""
                     asp-controller="Tarefa"
                     asp-action="Detalhe"
-                    asp-route-id="@item.Id">Detalhar
-                </a>
+                    asp-route-id="@item.Id">Detalhe
+                  
+                </button>
                     
                 </td>
                 <td>
-
-                <a
+                
+                <button type="submit" class="btn btn-success"
                     class="nav-link text-dark"
                     asp-area=""
                     asp-controller="Tarefa"
                     asp-action="Editar"
                     asp-route-id="@item.Id">Editar
-                </a>
+               
+                </button>
                     
                 </td>
                 <td>
-
-                <a
+            
+                <button type="submit" class="btn btn-danger"
                     class="nav-link text-dark"
                     asp-area=""
                     asp-controller="Tarefa"
                     asp-action="Excluir"
                     asp-route-id="@item.Id">Excluir
-                </a>
                     
+               
+                </button>
                 </td>
-            </tr>
+        </tr>
+          
         }
+        </tbody>
     </table>
+</div>
 </form>

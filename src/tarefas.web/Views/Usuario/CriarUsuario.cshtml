@@ -1,0 +1,82 @@
+@model Tarefas.Web.Models.UsuarioViewModel
+
+<form asp-action="CriarUsuario">
+
+    <html lang="en">
+
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    </head>
+
+    <body>
+        <style>
+            .custom-jumbotron {
+                background-color: DodgerBlue;
+                color: white;
+            }
+        </style>
+        <div>
+            <div class="jumbotron text-center custom-jumbotron">
+                <h3><strong>-- INPULSE --</h3></strong>
+                <p>Cadastro de Usuario</p>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-4">
+                        <div class="d-flex justify-content-between">
+
+                            <h3><label for="Email">@Html.DisplayNameFor(model => model.Email)</label>
+                                <div class="d-flex justify-content-end">
+                                    <input asp-for="Email" type="text" />
+                                </div>
+                        </div>
+                        </h3>
+                        <h5><span asp-validation-for="Email" type="text"></span></h5>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="d-flex justify-content-between">
+                            <h3><label asp-for="Senha">@Html.DisplayNameFor(model => model.Senha)</label>
+                                <div class="d-flex justify-content-end">
+                                    <input asp-for="Senha" type="text" />
+                                </div>
+                        </div>
+                        </h3>
+                        <h5><span asp-validation-for="Senha" type="password"></span></h5>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="d-flex justify-content-between">
+                            <h3><label for="Nome">@Html.DisplayNameFor(model => model.Nome)</label>
+                                <div class="d-flex justify-content-end"></div>
+                                <input asp-for="Nome" type="text" />
+                        </div>
+                    </div>
+                    </h3>
+                    <h5><span asp-validation-for="Nome" type="text"></span></h5>
+                </div>
+
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" style="margin-top: 20px;">Clique aqui para salvar o
+            usuário</button>
+        </div>
+
+
+        <div asp-validation-summary="All" class="text-danger"></div>
+
+    </body>
+
+    </html>
+
+
+</form>

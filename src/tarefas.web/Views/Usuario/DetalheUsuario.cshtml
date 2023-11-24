@@ -1,0 +1,64 @@
+@model Tarefas.Web.Models.UsuarioViewModel
+
+
+<form asp-action="DetalheUsuario">
+
+  <html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+
+    <style>
+      .custom-jumbotron {
+        background-color: DodgerBlue;
+        color: white;
+      }
+    </style>
+    <div>
+      <div class="jumbotron text-center custom-jumbotron">
+        <h2>
+          <h3>Detalhe do usuário @Model.Id</h3>
+        </h2>
+
+        <table class="table table-striped">
+
+          <tbody>
+            <tr>
+              <td><strong>Email:</strong></td>
+              <td>@Model.Email</td>
+            </tr>
+            <tr>
+              <td><strong>Senha:</strong></td>
+              <td>@Model.Senha</td>
+            </tr>
+            <tr>
+              <td><strong>Nome:</strong></td>
+              <td>@Model.Nome</td>
+            </tr>
+            <tr>
+              <td><strong>Ativo:</strong></td>
+              <td>@Model.Ativo</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+        <div class="text-right">
+          <a href="javascript:history.go(-1);" class="btn btn-primary" style="margin-top: 10px;">Voltar</a>
+        </div>
+
+      </div>
+
+  </body>
+
+  </html>
+
+
+</form>

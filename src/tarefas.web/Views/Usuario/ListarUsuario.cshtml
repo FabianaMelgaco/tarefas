@@ -1,0 +1,82 @@
+@model List<Tarefas.Web.Models.UsuarioViewModel> 
+
+
+
+<form asp-action="ListarUsuario">
+
+    <style>
+        .custom-jumbotron {
+            background-color: DodgerBlue;
+            color: white;
+        }
+    </style>
+    <div>
+        <div class="jumbotron text-center custom-jumbotron">
+            <h3><strong>Lista de Usuários Cadastrados</h3></strong>
+      
+        </div>
+    </div>
+<div class="table-responsive">
+ <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Email</th>
+      <th scope="col">Status</th>
+    
+    </tr>
+  </thead>
+  <tbody>
+
+    @foreach (var item in Model)
+        {
+        <tr>
+         
+            <td>@item.Id</td>
+            <td>@item.Nome</td>
+            <td>@item.Email</td>
+            <td>@item.Ativo</td>
+        
+                <td>
+                <button type="submit" class="btn btn-primary"
+                    class="nav-link text-dark"
+                    asp-area=""
+                    asp-controller="Usuario"
+                    asp-action="DetalheUsuario"
+                    asp-route-id="@item.Id">Detalhe
+                  
+                </button>
+                    
+                </td>
+                <td>
+                
+                <button type="submit" class="btn btn-success"
+                    class="nav-link text-dark"
+                    asp-area=""
+                    asp-controller="Usuario"
+                    asp-action="EditarUsuario"
+                    asp-route-idusur="@item.Id">Editar
+               
+                </button>
+                    
+                </td>
+                <td>
+            
+                <button type="submit" class="btn btn-danger"
+                    class="nav-link text-dark"
+                    asp-area=""
+                    asp-controller="Usuario"
+                    asp-action="ExcluirUsuario"
+                    asp-route-idusur="@item.Id">Excluir
+                    
+               
+                </button>
+                </td>
+        </tr>
+          
+        }
+        </tbody>
+    </table>
+</div>
+</form>

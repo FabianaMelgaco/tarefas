@@ -1,8 +1,11 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using tarefas.web.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace tarefas.web.Controllers;
+
+[Authorize]
 
 public class HomeController : Controller
 {

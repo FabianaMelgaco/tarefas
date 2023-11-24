@@ -1,0 +1,86 @@
+@model Tarefas.Web.Models.UsuarioViewModel
+
+
+<form asp-action="SalvarEdicaoUsuario">
+
+    <html lang="en">
+
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+
+        <style>
+            .custom-jumbotron {
+                background-color: DodgerBlue;
+                color: white;
+            }
+        </style>
+
+        <div>
+            <div class="jumbotron text-center custom-jumbotron">
+                <p>
+                <h3><strong>-- Editando o Usuario: @Model.Id --</h3></strong></p>
+            </div>
+
+            <div class="container"
+                style="display:flex; flex-direction: row; justify-content: center; align-items: center;">
+
+
+                <input asp-for="Id" type="hidden"></input>
+
+                <div class="row">
+
+                    <div class="col-sm-3">
+                        <div class="d-flex justify-content-between">
+                            <h4><label for="Email">@Html.DisplayNameFor(model => model.Email)</label>
+                                <input asp-for="Email" type="text"></input>
+                        </div>
+                        </h4>
+                        <h6><span asp-validation-for="Email" type="text"></span></h6>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="d-flex justify-content-between">
+                            <h4><label asp-for="Senha">@Html.DisplayNameFor(model => model.Senha)</label>
+                                <input asp-for="Senha" type="text"></input>
+                        </div>
+                        </h4>
+                        <h6><span asp-validation-for="Senha" type="text"></span></h6>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="d-flex justify-content-between">
+                            <h4><label for="Nome">@Html.DisplayNameFor(model => model.Nome)</label>
+                                <input asp-for="Nome" type="text"></input>
+                        </div>
+                        </h4>
+                        <h6><span asp-validation-for="Nome" type="text"></span></h6>
+
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="d-flex justify-content-between">
+                            <h4><label for="Ativo">@Html.DisplayNameFor(model => model.Ativo)</label>
+                                <input asp-for="Ativo" type="text"></input>
+                        </div>
+                        </h4>
+                        <h6><span asp-validation-for="Ativo" type="text"></span></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <button type="submit"
+            class="btn btn-primary btn-block margin-right: 20px" >
+                Clique aqui para salvar as alterações</button>
+        <div asp-validation-summary="All" class="text-danger"></div>
+    </body>
+
+    </html>
+</form>

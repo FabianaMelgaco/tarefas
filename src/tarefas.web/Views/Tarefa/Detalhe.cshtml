@@ -3,41 +3,58 @@
 
 <form asp-action="Detalhe">
 
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-<body>
+  <html>
 
-<div class="container">
-  <h2><h3>Visualizando a tarefa @Model.Id</h3></h2>    
-  <p>Detalhes da tarefa:</p>                  
-  <table class="table table-striped">
-    <thead>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
 
-    </thead>
-    <tbody>
-        <tr>           
-                <td><strong>Título:</strong></td>
-                <td>@Model.Titulo</td>        
-        </tr>
-      <tr>
-                <td><strong>Descrição:</strong></td>
-                <td>@Model.Descricao</td> 
-      </tr>
-      <tr>
-                <td><strong>Status:</strong></td>
-                <td>@Model.Status</td> 
-      </tr>
-    </tbody>
-  </table>
-</div>
+  <body>
 
-</body>
-</html>
+    <style>
+      .custom-jumbotron {
+        background-color: DodgerBlue;
+        color: white;
+      }
+    </style>
+    <div>
+      <div class="jumbotron text-center custom-jumbotron">
+        <h2>
+          <h3>Detalhe da tarefa @Model.Id</h3>
+        </h2>
+
+        <table class="table table-striped">
+
+          <tbody>
+            <tr>
+              <td><strong>Título:</strong></td>
+              <td>@Model.Titulo</td>
+            </tr>
+            <tr>
+              <td><strong>Descrição:</strong></td>
+              <td>@Model.Descricao</td>
+            </tr>
+            <tr>
+              <td><strong>Status:</strong></td>
+              <td>@Model.Status</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+        <div class="text-right">
+          <a href="javascript:history.go(-1);" class="btn btn-primary" style="margin-top: 10px;">Voltar</a>
+        </div>
+
+      </div>
+
+  </body>
+
+  </html>
 
 
 </form>
